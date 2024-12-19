@@ -6,10 +6,10 @@ import Product from './Pages/Product';
 import Blog from './Pages/Blog';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-
+import Hero from './Hero/Hero';
 const App = () => {
   return (
-   <>
+  <>
    <BrowserRouter>
     <Navbar/>
     <Routes>
@@ -20,6 +20,7 @@ const App = () => {
       <Route path='/' element={<Contact/>}/>
     </Routes>
    </BrowserRouter>
+   <Hero/>
    </>
   )
 }
